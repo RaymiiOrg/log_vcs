@@ -12,6 +12,8 @@ The plugin requires 'GitPython'. On Ubuntu this can be installed with the packag
 
 The plugin requires the Ansible folder to be a git repository. If you have a seperate 'roles' directory, that is not included in this plugin. 
 
+More infor can be [found here](https://raymii.org/s/software/log_vcs_-_Ansible_Callback_plugin_that_creates_git_branches_for_every_ansible_run.html)
+
 To install the plugin, create a folder in your Ansible folder: 
 
 	mkdir -p plugins/callbacks
@@ -30,7 +32,7 @@ If you have multiple environments (multiple inventories) then every inventory ne
 
 The branch name format is:
 
-	auto-$year$month$dayT$hour$minute-$env-$branch-$username-$playbook-filename
+		auto-$year$month$dayT$hour$minute-$env-$branch-$username-$playbook-filename
 
 For example:
 
