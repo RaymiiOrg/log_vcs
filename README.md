@@ -44,3 +44,10 @@ or:
 	auto-20180710T091419-prd-refactor-for-odoo-remy-ping.yml
 
 
+## Auto-commit or cleanup?
+
+There is no auto-commit or auto-push to a git server. In my use-case deployment is always done from a management machine, otherwise you have to extend the plugin to do auto-commit and push. I decided in my case it would not be useful.
+
+Auto-cleanup is also not implemented. We have bash for that:
+
+	git branch | grep 'auto-' | xargs -L 1 -I % git branch -d %
